@@ -25,7 +25,7 @@ let a = 300
  //console.log(c);
 
 
-function one(){
+function one(){              // **CLOSURE**
     const username = "hitesh"
 
     function two(){
@@ -33,7 +33,7 @@ function one(){
        // console.log(username);
     }
     //console.log(website); no scope
-    two()
+   // two()
 }
 one()
 
@@ -50,13 +50,13 @@ if (true) {
 
 // ***** interesting
 
+console.log(addone(5));
 function addone(num){
     return num + 1
 }
 
-addone(5);
 
+console.log(addTwo(7));
 const addTwo=(num)=>{
     return num+3
 };
-addTwo(7);
